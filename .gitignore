@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# PyCharm
+.idea/
+
+# Astro
+*/.astro
+
 # C extensions
 *.so
 
