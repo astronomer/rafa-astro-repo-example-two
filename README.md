@@ -1,5 +1,7 @@
 # rafa-astro-repo-example-two
-This is a mono repo for multiple Astro deployments
+This is a mono repo for multiple Astro deployments with multiple Teams. 
+The teams are `alpha, cortex, kaizen` and each team deploys to their own set of
+Astro deployments.
 
 # Repo contents
 ```shell
