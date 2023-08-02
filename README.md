@@ -6,16 +6,24 @@ This is a mono repo for multiple Astro deployments
 
 ```mermaid
 graph LR;
-    subgraph team
-        astro-dir
+    subgraph teams
+        team1/
+        team2/
+        team3/
     end
     subgraph ci-cd
-        team/astro-dir
+        dir[picks up specific team folder]
     end
     subgraph astro
-        deployment
+        team1-deployments
+        team2-deployments
+        team3-deployments
     end
     
-    astro-dir-->ci-cd;
-    ci-cd->deployment;
+    team1/-->ci-cd;
+    team2/-->ci-cd;
+    team3/-->ci-cd;
+    ci-cd-- team1 deployment -->team1-deployments;
+    ci-cd-- team2 deployment -->team2-deployments;
+    ci-cd-- team3 deployment -->team3-deployments;
 ```
